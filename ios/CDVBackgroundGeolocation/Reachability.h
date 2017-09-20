@@ -43,7 +43,9 @@ FOUNDATION_EXPORT const unsigned char ReachabilityVersionString[];
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
-extern NSString *const kReachabilityChangedNotification;
+#ifndef kReachabilityChangedNotification
+#define kReachabilityChangedNotification @"kNetworkReachabilityChangedNotification"
+#endif
 
 typedef NS_ENUM(NSInteger, NetworkStatus) {
     // Apple NetworkStatus Compatible Names.

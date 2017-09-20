@@ -34,10 +34,6 @@
 #import <ifaddrs.h>
 #import <netdb.h>
 
-
-NSString *const kReachabilityChangedNotification = @"kReachabilityChangedNotification";
-
-
 @interface Reachability ()
 
 @property (nonatomic, assign) SCNetworkReachabilityRef  reachabilityRef;
